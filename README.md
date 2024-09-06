@@ -1,5 +1,6 @@
 # SBFL_Techniques
-This repository contains codes for the important Spectrum based Fault Localization techniques.
+This repository contains codes for the important Spectrum based Fault Localization (SBFL) techniques.
+
 Here are the selected SBFL techniques:
 1. DStar
 2. Tarantula
@@ -29,7 +30,8 @@ Note: Only executable statements are considered.
 An example input file is statementResult.csv avaiable in the repository.
 
 2. ``<FaultyLineNumber>`` : Enter the line number of the faulty statement.
-3. ``<SBFL_MethodName>`` : Mention the fault technique used to generate the rank of the statements. Use any one of the technique mention above between 1-12.
-4. ``<OutputFileName>`` : Enter the output file. 
+3. ``<SBFL_MethodName>`` : Mention the fault localization technique name to generate the rank of the statements. Use any one of the technique mention above between 1-12.
+4. ``<OutputFileName>`` : Enter the output file. Do not add the extension. It will generate a JSON file containing the Best Case and Worst Case rank of the faulty statement.
+
 
 
