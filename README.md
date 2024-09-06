@@ -17,3 +17,19 @@ Here are the selected SBFL techniques:
 
 # Usage
 ``python3 faultLocalizationMain.py <statementCoverageFileName> <FaultyLineNumber> <SBFL_MethodName> <OutputFileName>``
+
+Here, 1. ``<statementCoverageFileName>`` is the input statement coverage information file in csv format. Do not add the file extension.
+
+## Format of the Input File
+Each row represents the statement coverage information of a test case followed by the test case result.
+Statement executed by the test case is respresented as 1 otherwise 0. Similarly, the pass test cases are represented with 0 and failed test cases are by 1 in the Result column.
+
+Note: Only executable statements are considered.
+
+An example input file is statementResult.csv avaiable in the repository.
+
+2. ``<FaultyLineNumber>`` : Enter the line number of the faulty statement.
+3. ``<SBFL_MethodName>`` : Mention the fault technique used to generate the rank of the statements. Use any one of the technique mention above between 1-12.
+4. ``<OutputFileName>`` : Enter the output file. 
+
+
