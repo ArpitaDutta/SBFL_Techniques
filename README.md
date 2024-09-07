@@ -32,7 +32,7 @@ Here,
 1. ``<statementCoverageFileName>`` is the input statement coverage information file in csv format. Do not add the file extension.
 2. ``<FaultyLineNumber>`` : Enter the line number of the faulty statement.
 3. ``<SBFL_MethodName>`` : Mention the fault localization technique name to generate the rank of the statements. Use any one of the technique mention above between 1-12.
-4. ``<OutputFileName>`` : Enter the output file. Do not add the extension. It will generate a JSON file containing the Best Case and Worst Case rank of the faulty statement.
+4. ``<OutputFileName>`` : Enter the output file name. Do not add the extension. It will generate a JSON file containing the Best Case and Worst Case rank of the faulty statement.
 
 ### Format of the Input File
 Each row represents the statement coverage information of a test case followed by the test case result.
