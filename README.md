@@ -15,6 +15,14 @@ Here are the selected SBFL techniques:
 11. Jaccard
 12. Op2
 
+# Installation
+Make sure conda is installed in your system.
+```
+conda create -n fl_all python=3.10 -y
+conda activate fl_all
+pip install pandas
+git clone https://github.com/ArpitaDutta/SBFL_Techniques.git
+```
 
 # Usage
 ``python3 faultLocalizationMain.py <statementCoverageFileName> <FaultyLineNumber> <SBFL_MethodName> <OutputFileName>``
