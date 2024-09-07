@@ -22,14 +22,19 @@ conda create -n fl_all python=3.10 -y
 conda activate fl_all
 pip install pandas
 git clone https://github.com/ArpitaDutta/SBFL_Techniques.git
+cd SBFL_Techniques
 ```
 
 # Usage
-``python3 faultLocalizationMain.py <statementCoverageFileName> <FaultyLineNumber> <SBFL_MethodName> <OutputFileName>``
+``./runFLALL.sh <statementCoverageFileName> <FaultyLineNumber> <SBFL_MethodName> <OutputFileName>``
 
-Here, 1. ``<statementCoverageFileName>`` is the input statement coverage information file in csv format. Do not add the file extension.
+Here,
+1. ``<statementCoverageFileName>`` is the input statement coverage information file in csv format. Do not add the file extension.
+2. ``<FaultyLineNumber>`` : Enter the line number of the faulty statement.
+3. ``<SBFL_MethodName>`` : Mention the fault localization technique name to generate the rank of the statements. Use any one of the technique mention above between 1-12.
+4. ``<OutputFileName>`` : Enter the output file. Do not add the extension. It will generate a JSON file containing the Best Case and Worst Case rank of the faulty statement.
 
-## Format of the Input File
+### Format of the Input File
 Each row represents the statement coverage information of a test case followed by the test case result.
 Statement executed by the test case is respresented as 1 otherwise 0. Similarly, the pass test cases are represented with 0 and failed test cases are by 1 in the Result column.
 
@@ -37,9 +42,6 @@ Note: Only executable statements are considered.
 
 An example input file is statementResult.csv avaiable in the repository.
 
-2. ``<FaultyLineNumber>`` : Enter the line number of the faulty statement.
-3. ``<SBFL_MethodName>`` : Mention the fault localization technique name to generate the rank of the statements. Use any one of the technique mention above between 1-12.
-4. ``<OutputFileName>`` : Enter the output file. Do not add the extension. It will generate a JSON file containing the Best Case and Worst Case rank of the faulty statement.
 
 
 
