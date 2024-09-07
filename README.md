@@ -45,9 +45,9 @@ Note: Only executable statements are considered.
 
 An example input file is statementResult.csv avaiable in the repository.
 
-# Output
+### Output
 
-  result.json is created under SBFL_Techniques. Content of the file as follows:
+  result.json will be created under SBFL_Techniques. Content of the file is as follows:
  
  `` {"Method Name": "DStar", "Faulty Line": "1", "Best Case Rank": 24, "Worst Case Rank": 51} ``
 
